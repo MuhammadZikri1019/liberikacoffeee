@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelatihan HTML - Landing Page Sederhana</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      style="
+        position: relative;
+        background-color: #2b1602;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-style: italic;
+      "
+    >
+      <h1 style="font-size: 5vw">
+        Liberika<span style="color: #b6895b">Coffee.</span>
+        <!-- Gambar diatur ke sudut kanan -->
+      </h1>
+      <img
+        src="img/kopi5.png"
+        alt="Logo"
+        style="
+          height: 15vw;
+          max-height: 140px;
+          width: auto;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          border-radius: 50%;
+          object-fit: cover;
+          filter: drop-shadow(-10px 0 20px rgba(75, 46, 46, 0.7));
+        "
+      />
+    </header>
+
+    <!-- Navigasi -->
+    <nav
+      style="
+        background-color: #b6895b;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      "
+    >
+      <a
+        href="#home"
+        style="color: white; margin: 5px 10px; text-decoration: none"
+        >Home</a
+      >
+      <a
+        href="#Menu"
+        style="color: white; margin: 5px 10px; text-decoration: none"
+        >Menu</a
+      >
+      <a
+        href="#about"
+        style="color: white; margin: 5px 10px; text-decoration: none"
+        >Tentang</a
+      >
+
+      <a
+        href="#contact"
+        style="color: white; margin: 5 10px; text-decoration: none"
+        >Kontak</a
+      >
+    </nav>
+    <!-- Hero Section -->
+    <section
+      id="home"
+      style="
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background-image: url('img/kopi.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        padding: 20px;
+      "
+    >
+      <main style="width: 100%">
+        <div style="padding: 0 5%">
+          <h1
+            style="
+              color: #f0f0f0;
+              font-size: 8vw;
+              line-height: 1;
+              text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black,
+                -2px 2px 0 black;
+            "
+          >
+            Mari Nikmati Secangkir
+            <span style="color: #b6895b">kopi</span>
+          </h1>
+          <p
+            style="
+              color: #f0f0f0;
+              font-size: 4vw;
+              line-height: 1;
+              text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black,
+                -2px 2px 0 black;
+            "
+          >
+            Karna <span style="color: #b6895b">Kopi</span> Tak Pernah Memilih
+            Siapa Yang Layak Menikmati
+            <span style="color: #b6895b">Nya,</span> Karena Dihadapan
+            <span style="color: #b6895b">Nya</span>, Kita Semua Sama
+          </p>
+          <button
+            type="submit"
+            style="
+              display: inline-block;
+              padding: 1rem 3rem;
+              font-size: 2vw;
+
+              color: #f0f0f0;
+              background-color: #b6895b;
+              cursor: pointer;
+              border-radius: 10px;
+            "
+          >
+            Beli Sekarang
+          </button>
+        </div>
+      </main>
+    </section>
+
+    <!-- Tentang -->
+    <section
+      id="about"
+      style="
+        padding: 30px 5px;
+        text-align: center;
+        background-color: #2b1602;
+        color: #f0f0f0;
+      "
+    >
+      <h2 style="text-align: center; font-size: 2.6rem; margin-bottom: 3rem">
+        <span style="color: #b6895b">Tentang</span> Kami
+      </h2>
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div style="flex: 1 1 100%; max-width: 500px; margin-bottom: 20px">
+          <img
+            src="kopie.jpg"
+            alt="Tentang Kami "
+            style="width: 100%; height: auto"
+          />
+        </div>
+        <div
+          style="
+            flex: 1 1 100%;
+            max-width: 600px;
+            padding: 0 1rem;
+            text-align: justify;
+          "
+        >
+          <h3
+            style="font-size: 1.8rem; margin-bottom: 1rem; text-align: center"
+          >
+            Kenapa Harus Minum Kopi Kami?
+          </h3>
+          <p
+            style="
+              margin-bottom: 0.8rem;
+              font-size: 1rem;
+              font-weight: 100;
+              line-height: 1.6;
+            "
+          >
+            Kopi Liberika kami menawarkan cita rasa yang unik dan berbeda dari
+            kopi pada umumnya. Dengan karakter rasa yang kaya, aroma fruity yang
+            segar, serta sentuhan rasa smoky yang khas, setiap tegukan
+            memberikan pengalaman menikmati kopi yang istimewa. Ditambah lagi,
+            biji kopi kami dipanen secara selektif dari perkebunan terbaik dan
+            diproses dengan penuh ketelitian untuk menjaga kualitas rasa yang
+            konsisten. Ini adalah pilihan sempurna bagi para penikmat kopi yang
+            ingin merasakan sensasi baru yang memanjakan lidah.
+          </p>
+          <p
+            style="
+              margin-bottom: 0.8rem;
+              font-size: 1rem;
+              font-weight: 100;
+              line-height: 1.6;
+            "
+          >
+            Selain keistimewaan rasa, membeli kopi Liberika kami juga berarti
+            mendukung keberlanjutan petani lokal. Setiap pembelian Anda turut
+            membantu meningkatkan kesejahteraan petani dan menjaga kelestarian
+            perkebunan kopi di daerah asalnya. Kami berkomitmen untuk
+            menghadirkan produk berkualitas tinggi sekaligus memberdayakan
+            komunitas lokal. Dengan begitu, secangkir kopi Liberika kami bukan
+            hanya tentang kenikmatan, tetapi juga tentang kontribusi positif
+            bagi lingkungan dan masyarakat.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Menu -->
+    <section
+      id="Menu"
+      style="
+        padding: 30px 20px;
+        text-align: center;
+        background-color: #b6895b;
+        color: #f0f0f0;
+      "
+    >
+      <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem">
+        <span style="color: #3b1f02">Menu</span> Kami
+      </h2>
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 3rem;
+          padding: 3rem;
+        "
+      >
+        <div style="flex: 1 1 150px; max-width: 200px">
+          <img
+            src="img/2.jpg"
+            alt="Macchiato"
+            style="
+              width: 100%;
+              height: auto;
+              border-radius: 50%;
+              object-fit: cover;
+            "
+          />
+          <h3 style="text-align: center; margin: 1rem auto 0.5rem">
+            Macchiato
+          </h3>
+          <p style="text-align: center">IDR 15.000</p>
+        </div>
+        <div style="flex: 1 1 150; max-width: 200px">
+          <img
+            src="img/1.jpg"
+            alt="Americano"
+            style="
+              border-radius: 50%;
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+            "
+          />
+          <h3 style="text-align: center; margin: 1rem auto 0.5rem">
+            Americano
+          </h3>
+          <p style="text-align: center">IDR 10.000</p>
+        </div>
+        <div style="flex: 1 1 150; max-width: 200px">
+          <img
+            src="img/3.jpg"
+            alt="Espresso"
+            style="
+              border-radius: 50%;
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+            "
+          />
+          <h3 style="text-align: center; margin: 1rem auto 0.5rem">Espresso</h3>
+          <p style="text-align: center">IDR 20.000</p>
+        </div>
+        <div style="flex: 1 1 150; max-width: 200px">
+          <img
+            src="img/4.jpg"
+            alt="Caffè Latte"
+            width="150"
+            height="150"
+            style="
+              border-radius: 50%;
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+            "
+          />
+          <h3 style="text-align: center; margin: 1rem auto 0.5rem">
+            Caffè Latte
+          </h3>
+          <p style="text-align: center">IDR 25.000</p>
+        </div>
+        <div style="flex: 1 1 150; max-width: 200px">
+          <img
+            src="img/5.jpg"
+            alt="Cappuccino"
+            width="150"
+            height="150"
+            style="
+              border-radius: 50%;
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+            "
+          />
+          <h3 style="text-align: center; margin: 1rem auto 0.5rem">
+            Cappuccino
+          </h3>
+          <p style="text-align: center">IDR 18.000</p>
+        </div>
+        <div style="flex: 1 1 150; max-width: 200px">
+          <img
+            src="img/6.jpg"
+            alt="Doppio Espresso"
+            width="150"
+            height="150"
+            style="
+              border-radius: 50%;
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+            "
+          />
+          <h3 style="text-align: center; margin: 1rem auto 0.5rem">
+            Doppio Espresso
+          </h3>
+          <p style="text-align: center">IDR 28.000</p>
+        </div>
+        <div style="flex: 1 1 150; max-width: 200px">
+          <img
+            src="img/7.jpg"
+            alt="Vanila Latte"
+            width="150"
+            height="150"
+            style="
+              border-radius: 50%;
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+            "
+          />
+          <h3 style="text-align: center; margin: 1rem auto 0.5rem">
+            Vanilla Latte
+          </h3>
+          <p style="text-align: center">IDR 30.000</p>
+        </div>
+        <div style="flex: 1 1 150; max-width: 200px">
+          <img
+            src="img/8.jpg"
+            alt="Mocha"
+            width="150"
+            height="150"
+            style="
+              border-radius: 50%;
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+            "
+          />
+          <h3 style="text-align: center; margin: 1rem auto 0.5rem">Mocha</h3>
+          <p style="text-align: center">IDR 25.000</p>
+        </div>
+        <div style="flex: 1 1 150; max-width: 200px">
+          <img
+            src="img/9.jpg"
+            alt="Affogato"
+            width="150"
+            height="150"
+            style="
+              border-radius: 50%;
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+            "
+          />
+          <h3 style="text-align: center; margin: 1rem auto 0.5rem">Affogato</h3>
+          <p style="text-align: center">IDR 30.000</p>
+        </div>
+      </div>
+    </section>
+    <!-- Kontak -->
+    <section
+      id="contact"
+      style="
+        background-color: #2b1602;
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+      "
+    >
+      <section
+        id="contact"
+        style="
+          background-color: #2b1602;
+          color: white;
+          padding: 30px 20px;
+          text-align: center;
+        "
+      >
+        <h2><span style="color: #b6895b">Hubungi</span> Kami</h2>
+        <p>Email: liberika@coffee.com</p>
+        <p>Telepon: (021) 123-4567</p>
+        <div style="display: flex">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63825.31642352174!2d104.12866674365038!3d1.100574884663677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1744544271800!5m2!1sid!2sid"
+            allowfullscreen=""
+            style="flex: 1 1 45rem; width: 100%; object-fit: cover"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <form
+            action=""
+            style="flex: 1 1 45rem; padding: 5rem 2rem; text-align: center"
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                margin-top: 2rem;
+                background-color: #3b1f02;
+                border: 1px solid #eee;
+                padding: 1.3rem;
+                width: 100%;
+                font-size: 1.7rem;
+                background: none;
+              "
+            >
+              <i data-feather="user"></i>
+              <input
+                type="text"
+                placeholder="Name"
+                style="
+                  background: transparent;
+                  border: none;
+                  outline: none;
+                  color: white;
+                  width: 100%;
+                  margin-left: 10px;
+                "
+              />
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                margin-top: 2rem;
+                background-color: #3b1f02;
+                border: 1px solid #eee;
+                padding: 1.3rem;
+                width: 100%;
+                font-size: 1.7rem;
+                background: none;
+              "
+            >
+              <i data-feather="phone"></i>
+              <input
+                type="text"
+                placeholder="Phone Number"
+                style="
+                  background: transparent;
+                  border: none;
+                  outline: none;
+                  color: white;
+                  width: 100%;
+                  margin-left: 10px;
+                "
+              />
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                margin-top: 2rem;
+                background-color: #3b1f02;
+                border: 1px solid #eee;
+                padding: 1.3rem;
+                width: 100%;
+                font-size: 1.7rem;
+                background: none;
+              "
+            >
+              <i data-feather="mail"></i>
+              <input
+                type="text"
+                placeholder="@mail"
+                style="
+                  background: transparent;
+                  border: none;
+                  outline: none;
+                  color: white;
+                  width: 100%;
+                  margin-left: 10px;
+                "
+              />
+            </div>
+            <button
+              type="submit"
+              style="
+                margin-top: 3rem;
+                display: inline-block;
+                padding: 1rem 3rem;
+                font-size: 1.7rem;
+                color: #f0f0f0;
+                background-color: #b6895b;
+                cursor: pointer;
+              "
+            >
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </section>
+    </section>
+    <!-- Footer -->
+    <footer
+      style="background-color: #b6895b; text-align: center; padding: 1rem 0"
+    >
+      <div>
+        <a href="#"
+          ><i data-feather="instagram" style="color: #f0f0f0; margin: 1rem"></i
+        ></a>
+        <a href="#"
+          ><i data-feather="twitter" style="color: #f0f0f0; margin: 1rem"></i
+        ></a>
+        <a href="#"
+          ><i data-feather="facebook" style="color: #f0f0f0; margin: 1rem"></i
+        ></a>
+      </div>
+      <div>
+        <a href="#home" style="color: #f0f0f0; padding: 0.7rem 1rem">Home</a>
+        <a href="#menu" style="color: #f0f0f0; padding: 0.7rem 1rem">Menu</a>
+        <a href="#about" style="color: #f0f0f0; padding: 0.7rem 1rem"
+          >Tentang</a
+        >
+        <a href="#contact" style="color: #f0f0f0; padding: 0.7rem 1rem"
+          >Kontak</a
+        >
+      </div>
+      <div style="color: #f0f0f0">
+        <p>
+          Created by <span style="color: #000000">Muhammad_Zikri</span> &copy;
+          2025. Semua hak dilindungi.
+        </p>
+      </div>
+    </footer>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
